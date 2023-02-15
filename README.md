@@ -17,3 +17,7 @@ You can install required packages by:
 ```bash
 pip3 install -r requirements.txt
 ```
+
+## Contributing
+
+If you find a bug, create a GitHub issue, or even better, submit a pull request. Similarly, if you have questions, simply post them as GitHub issues.
