@@ -38,10 +38,10 @@ class AlexNet(nn.Module):
             nn.MaxPool2d(kernel_size=3, stride=2)  # (b x 256 x 6 x 6)
         )
         self.classifier = nn.Sequential(
-            nn.Dropout(p=0.5, inplace=True),
+            nn.Dropout(p=0.5),
             nn.Linear(in_features=(256 * 6 * 6), out_features=4096),
             nn.ReLU(),
-            nn.Dropout(p=0.5, inplace=True),
+            nn.Dropout(p=0.5),
             nn.Linear(in_features=4096, out_features=4096),
             nn.ReLU(),
             nn.Linear(in_features=4096, out_features=num_classes)
