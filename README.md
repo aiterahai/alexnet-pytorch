@@ -10,13 +10,23 @@ This is an implementaiton of AlexNet, as introduced in the paper "[ImageNet Clas
 
 * python>=3.9.12
 
-* pytorch==1.12.1
+* torch==1.13.1
+
+* torchvision==0.14.1
 
 You can install required packages by:
 
 ```bash
 pip3 install -r requirements.txt
 ```
+
+## Training
+
+```bash
+python3 train.py
+```
+
+Specify `TRAIN_IMG_DIR` in the script before training.
 
 ## Contributing
 
